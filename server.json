@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.speaktoyourdatabase/styd",
+  "title": "Speak To Your Database (STYD)",
+  "description": "Ask your Odoo, PostgreSQL or MySQL data in plain words. Real numbers, read-only.",
+  "version": "1.0.0",
+  "websiteUrl": "https://speaktoyourdatabase.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://speaktoyourdatabase.com/mcp"
+    }
+  ]
+}
