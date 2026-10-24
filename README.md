@@ -4,12 +4,15 @@
 
 [![Speak To Your Database MCP connector](https://glama.ai/mcp/connectors/com.speaktoyourdatabase/styd/badges/score.svg)](https://glama.ai/mcp/connectors/com.speaktoyourdatabase/styd)
 
-STYD is a hosted MCP server. Connect it once to Claude, ChatGPT (coming soon), Le Chat, VS Code or any app that supports remote MCP servers, then ask things like:
+STYD is a hosted MCP server. Connect it once to Claude, ChatGPT, Le Chat, VS Code or any app that supports remote MCP servers, then ask things like:
 
 - "How much revenue did we make last month, compared with the month before?"
 - "Which customer invoices are overdue, and how much does each customer owe?"
+- "Show all sales orders grouped by customer and status, with the number of orders, the total amount and the date range."
 - "Top 10 products by sales this year"
 - "Why did sales drop this month?"
+
+Follow-ups work too: after the sales orders question, ask *"and only the confirmed ones?"* and STYD keeps the same grouping.
 
 STYD works out the answer from your data and sends back the numbers, with the period and the definition it used (for example, *revenue = posted customer invoices, excluding tax*).
 
@@ -66,7 +69,8 @@ Add a custom MCP connector with the URL `https://speaktoyourdatabase.com/mcp`, t
 
 ### ChatGPT
 
-Coming soon: the STYD app is in review for the ChatGPT app directory.
+Open **Plugins** in ChatGPT, search for **Speak To Your Database**, and click **Install plugin**. Sign in to STYD when asked.
+Plugin page: CHATGPT_LINK
 
 ### Cursor and other apps
 
@@ -104,7 +108,7 @@ Need STYD on your own server, with nothing leaving your network? See https://spe
 
 STYD is published in the official MCP Registry as `com.speaktoyourdatabase/styd`. The [`server.json`](server.json) in this repository is the registry entry.
 
-Also listed on [Glama](https://glama.ai/mcp/connectors/com.speaktoyourdatabase/styd) and the [Claude connectors directory](https://claude.ai/directory/speak-to-your-database).
+Also listed in the [ChatGPT plugin directory](CHATGPT_LINK), the [Claude connectors directory](https://claude.ai/directory/speak-to-your-database) and on [Glama](https://glama.ai/mcp/connectors/com.speaktoyourdatabase/styd).
 
 ## Support
 
