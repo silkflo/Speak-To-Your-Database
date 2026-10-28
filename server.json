@@ -2,9 +2,22 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.speaktoyourdatabase/styd",
   "title": "Speak To Your Database (STYD)",
-  "description": "Ask your Odoo, PostgreSQL or MySQL data in plain words. Real numbers, read-only.",
-  "version": "1.0.0",
+  "description": "Odoo ERP, PostgreSQL & MySQL MCP server: ask your business data in Claude or ChatGPT. Read-only.",
+  "version": "1.0.1",
   "websiteUrl": "https://speaktoyourdatabase.com",
+  "repository": {
+    "url": "https://github.com/silkflo/Speak-To-Your-Database",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://speaktoyourdatabase.com/styd-logo-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
