@@ -1,6 +1,6 @@
 # Speak To Your Database (STYD)
 
-**Ask your Odoo, PostgreSQL or MySQL data in plain words, from the AI app you already use. Real numbers, computed read-only from your data.**
+**Odoo, PostgreSQL & MySQL MCP server for Claude and ChatGPT. Ask your business data in plain words, from the AI app you already use. Real numbers, computed read-only from your data.**
 
 [![Speak To Your Database MCP connector](https://glama.ai/mcp/connectors/com.speaktoyourdatabase/styd/badges/score.svg)](https://glama.ai/mcp/connectors/com.speaktoyourdatabase/styd)
 
@@ -20,10 +20,25 @@ STYD works out the answer from your data and sends back the numbers, with the pe
 - MCP endpoint: `https://speaktoyourdatabase.com/mcp`
 - Demo video: https://www.youtube.com/watch?v=PZffAbynuc0
 - Docs: https://speaktoyourdatabase.com/docs/mcp
+- Odoo MCP guide: https://speaktoyourdatabase.com/docs/odoo-mcp
 
 > This repository holds the public setup guide and the registry file. STYD itself is a hosted service; its source code is not public.
 
 ---
+
+## Odoo MCP connector
+
+STYD is an Odoo MCP server for Claude, ChatGPT and other MCP apps. Ask about sales, invoices, unpaid amounts, customers, products and stock in plain words, and get the figures with what was counted, over which period and with which filters.
+
+- **Odoo 15 to 20**, on Odoo Online, Odoo.sh or your own server.
+- **Two ways to connect:** an Odoo API key (Online, Odoo.sh, on-premise) or the free STYD Bridge module (Odoo.sh, on-premise).
+- **Read-only:** STYD cannot create, change or delete anything in Odoo.
+- **Nothing to install on your computer:** STYD is hosted, and your AI app signs in to your STYD account.
+- **Several companies:** each company stays in its own workspace, and every answer names the one it comes from.
+
+Example questions: *"Which customers owe us the most, and how much is overdue?"*, *"Top 5 products by quantity sold this quarter"*, *"Compare this month's sales with the same month last year."*
+
+Full guide: https://speaktoyourdatabase.com/docs/odoo-mcp
 
 ## Try it in 2 minutes
 
@@ -70,7 +85,7 @@ Add a custom MCP connector with the URL `https://speaktoyourdatabase.com/mcp`, t
 ### ChatGPT
 
 Open **Plugins** in ChatGPT, search for **Speak To Your Database**, and click **Install plugin**. Sign in to STYD when asked.
-Plugin page: CHATGPT_LINK
+Plugin page: https://chatgpt.com/plugins/plugin_asdk_app_6ac9e3034d488191bd0b9a624cb1f0ae
 
 ### Cursor and other apps
 
@@ -106,9 +121,9 @@ Need STYD on your own server, with nothing leaving your network? See https://spe
 
 ## Registry
 
-STYD is published in the official MCP Registry as `com.speaktoyourdatabase/styd`. The [`server.json`](server.json) in this repository is the registry entry.
+STYD is published in the official MCP Registry as `com.speaktoyourdatabase/styd` (the [`server.json`](server.json) in this repository) and as `com.speaktoyourdatabase/odoo-mcp` (the Odoo MCP connector entry).
 
-Also listed in the [ChatGPT plugin directory](CHATGPT_LINK), the [Claude connectors directory](https://claude.ai/directory/speak-to-your-database) and on [Glama](https://glama.ai/mcp/connectors/com.speaktoyourdatabase/styd).
+Also listed in the [ChatGPT plugin directory](https://chatgpt.com/plugins/plugin_asdk_app_6ac9e3034d488191bd0b9a624cb1f0ae), the [Claude connectors directory](https://claude.ai/directory/speak-to-your-database) and on [Glama](https://glama.ai/mcp/connectors/com.speaktoyourdatabase/styd).
 
 ## Support
 
