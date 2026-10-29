@@ -1,4 +1,4 @@
-# Speak To Your Database (STYD)
+# Speak To Your Database: Odoo MCP server for ChatGPT and Claude
 
 **Odoo, PostgreSQL & MySQL MCP server for Claude and ChatGPT. Ask your business data in plain words, from the AI app you already use. Real numbers, computed read-only from your data.**
 
